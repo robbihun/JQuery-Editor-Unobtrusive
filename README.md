@@ -1,16 +1,16 @@
-This is a simple prototype I created to be able to edit (and potentially) save edited css using unobtrusive data-* attributes.
+This is a simple prototype I created to be able to edit (and potentially) and save css using unobtrusive data-* attributes on custom HTML templates.
 
 To use
 ======
 
-	$(ready(){
+	$(function(){
 		// Simple default implementation
 		$('#editor').tmplEditor();
 		
 		// Pass in custom options
 		var options = {
-			'dataNamespace': 'data-editable',
-			'callback': function () { /* Custom Callback, can make an ajax call to save css to server eventually */ }
+			dataNamespace: 'data-editable',
+			callback: function () { /* Custom Callback, can make an ajax call to save css to server eventually */ }
 		}
 		$('#editor).tmplEditor(options);
 	});
