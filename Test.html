@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+    <script src="jquery-1.5.1.js" type="text/javascript"></script>
+    <script src="CssEditor.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="title" data-editable="fgcolor,bgcolor,size" >This is the <span id="titleInner" data-editable="fgcolor">title</span></div>
+
+    <div id="editor"></div>
+</body>
+<script type="text/javascript">
+
+	$(function () { $("#editor").tmplEditor(); })
+</script>
+</html>
