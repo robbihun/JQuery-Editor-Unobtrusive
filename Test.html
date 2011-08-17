@@ -8,11 +8,17 @@
 </head>
 <body>
     <div id="title" data-editable="fgcolor,bgcolor,size" >This is the <span id="titleInner" data-editable="fgcolor">title</span></div>
-
+    <p id="mainText" data-editable="fgcolor,size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel egestas neque. Fusce risus velit, rhoncus non venenatis et, placerat id arcu. Proin varius tempor tellus. Vestibulum lobortis, quam ut ornare varius, lorem enim tempus nunc, nec aliquam risus neque sit amet tortor. Nulla mi sem, congue ac aliquam ac, pulvinar vel dolor. In venenatis neque vel sapien lacinia faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras varius ultrices ornare. Nullam bibendum venenatis elit at tristique. Mauris sem felis, sollicitudin nec lobortis in, sollicitudin quis ante. Maecenas vel ante ut ipsum gravida lacinia ac ac ante. Duis pulvinar laoreet ligula. Suspendisse semper ultricies orci, ac pretium diam facilisis ac. Etiam lobortis odio id nisi venenatis vehicula. </p>
+    <hr />
     <div id="editor"></div>
 </body>
 <script type="text/javascript">
 
-	$(function () { $("#editor").tmplEditor(); })
+    $(function () {
+        $("#editor").tmplEditor({ 
+            debug: true, 
+            callback: function () { alert('WOO!'); } 
+        }); 
+    })
 </script>
 </html>
